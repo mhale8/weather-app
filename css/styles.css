@@ -1,42 +1,16 @@
 /********************
-YOUR STYLES
+The fun part!
 *******************/
-/*
-.temp {
-  color: red;
-}
 
-.city {
-   color: blue;
- 
-}
-
-.state {
-  color: yellow;
-  }
-
-.forecast figure:nth-child(1) {
-  background: red;
-}
-
-.forecast figure:nth-child(2) {
-  background: green;
-}
-*/
-
-/*
-http://codepen.io/manikoth/pen/rxXrvb.css
-HOMESCREEN
-*/
 body {
 	font-family: 'Bitter', serif;
 	line-height: 1;
 	color: white;
 	margin: 0;
 	padding: 0;
-	background: #2a2a2a;
+	background: #708090;
 }
-.wrapper {
+.main {
 	width: 100%;
 	min-height: 100%;
 	margin: 0;
@@ -50,29 +24,22 @@ body {
   top: 1em;
   color: white;
   font-size: 2em;
-/*
-	padding: 0 5px;
-	border: solid white;
-	border-radius: 100px;
-*/
+
 }
+
+
 #close { 
 	float: right;
-	font-size: 2em;
-	margin: 1em;
-	padding: 0px 6px;
-	border: solid white;
-	border-radius: 100px;
-/*	text-shadow: 0 0 5px white;*/
+    font-size: 2em;
+    margin: 1em;
+    padding: 0px 6px;
+
 }
 .close { 
 	float: right;
-	font-size: 2em;
-	margin: 1em;
-	padding: 0px 6px;
-	border: solid white;
-	border-radius: 100px;
-/*	text-shadow: 0 0 5px white;*/
+    font-size: 2em;
+    margin: 1em;
+    padding: 0px 6px;
 }
 /*SIDR*/
 a {
@@ -81,8 +48,8 @@ a {
 }
 li a {
 	width: 100%;
-	padding: .5em .5em .5em 0;
-/*	margin-right: 100%;*/
+	
+
 }
 
 li a:active  {
@@ -98,8 +65,8 @@ li a:active  {
 }
 li {
 	width: 100%;
-	padding: .5em 0;
-	border-top: solid 4px white;
+	padding: 1em 0;
+	
 }
 li:nth-child(1) {
 	border-top: none;
@@ -110,16 +77,14 @@ li:nth-child(1) {
 	padding: 0;
 	margin-top: 2em;
 }
-li:nth-child(2) {
-	margin-bottom: 4em;
-}
+
 
 /*Section Containers*/
 section {
   min-height: 100%;
   position: absolute;
   width: 100%;
-  background: black;
+  background: #708090;
 }
 
 :target {
@@ -138,8 +103,7 @@ section {
     width: 16em;
     overflow-x: hidden;
     overflow-y: auto;
-	background: #2c2c2c;
-	box-shadow: inset -20px -30px 100px -20px black;
+	background: #236ab1;
     }
 
 .left {
@@ -201,13 +165,24 @@ i {
 figure {
 	display: flex;
 	flex-direction: row;
-	justify-content:space-between;
 	margin: 0;	
-	border-bottom: dotted 4px white;
+	
 }
-figure:last-child {
-	border-bottom: none;
+
+.next-day {
+    display: flex;
+    flex-direction: column;
+    float: right;
 }
+
+.high, .low {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 .forecast {
 	margin: 0 32px 0 0;
 	padding: 1em 0 4em 32px;
@@ -235,26 +210,19 @@ color: white;
 }
 /********conditional BG**********/
 .sad {
-background: #4f637b;  
-background: -webkit-linear-gradient(to left, #95999b , #F4f637b); 
-background: linear-gradient(to left, #95999b , #4f637b); 
+background: url("https://static.pexels.com/photos/50695/rain-after-the-rain-a-drop-of-drop-of-rain-50695.jpeg") no-repeat center center fixed;   
 }  
 .happy {
-background: ##a1d4f0; 
-background: -webkit-linear-gradient(to left, #ffb100 , ##a1d4f0);
-background: linear-gradient(to left, #ffb100 , #a1d4f0); 
+background: url("https://static.pexels.com/photos/50695/rain-after-the-rain-a-drop-of-drop-of-rain-50695.jpeg") no-repeat center center fixed;  
 }
 
 .wet {
-background: #898b8d; 
-background: -webkit-linear-gradient(to left, #138bbf , #898b8d); 
-background: linear-gradient(to left, #138bbf , #898b8d); 
+background: url("https://static.pexels.com/photos/50695/rain-after-the-rain-a-drop-of-drop-of-rain-50695.jpeg") no-repeat center center fixed;  
+ 
 }
 
 .bad {
-background: #2a2a2a; 
-background: -webkit-linear-gradient(to left, #2a2a2a , #cccccc); 
-background: linear-gradient(to left, #2a2a2a , #cccccc); 
+background: url("https://static.pexels.com/photos/50695/rain-after-the-rain-a-drop-of-drop-of-rain-50695.jpeg") no-repeat center center fixed;  
 }
 
 

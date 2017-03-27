@@ -159,28 +159,28 @@ $.simpleWeather({
       console.log(weather);
       
       // Display Data
-	  $('#spokane .currently').text(weather.currently);
-      $('#spokane .temp').text(weather.temp);
-      $('#spokane .city').text(weather.city);
-      $('#spokane img').attr('src', weather.image);
-	  $('#spokane .today').text(weather.forecast[0].day + ', ' + weather.forecast[0].date);
+	  $('#Spokane .currently').text(weather.currently);
+      $('#Spokane .temp').text(weather.temp);
+      $('#Spokane .city').text(weather.city);
+      $('#Spokane img').attr('src', weather.image);
+	  $('#Spokane .today').text(weather.forecast[0].day + ', ' + weather.forecast[0].date);
 	
 		// Display Data : Day 1
-    $('#spokane figure:nth-child(1) .low').text(weather.forecast[0].low);
-    $('#spokane figure:nth-child(1) .high').text(weather.forecast[0].high);
-    $('#spokane figure:nth-child(1) img').attr('src', weather.forecast[0].image);
+    $('#Spokane figure:nth-child(1) .low').text(weather.forecast[0].low);
+    $('#Spokane figure:nth-child(1) .high').text(weather.forecast[0].high);
+    $('#Spokane figure:nth-child(1) img').attr('src', weather.forecast[0].image);
 	
 		// Display Data : Day 2
-    $('#spokane figure:nth-child(2) .next-day').text(weather.forecast[1].day);
-    $('#spokane figure:nth-child(2) .low').text(weather.forecast[1].low);
-    $('#spokane figure:nth-child(2) .high').text(weather.forecast[1].high);
-    $('#spokane figure:nth-child(2) img').attr('src', weather.forecast[1].image);
+    $('#Spokane figure:nth-child(2) .next-day').text(weather.forecast[1].day);
+    $('#Spokane figure:nth-child(2) .low').text(weather.forecast[1].low);
+    $('#Spokane figure:nth-child(2) .high').text(weather.forecast[1].high);
+    $('#Spokane figure:nth-child(2) img').attr('src', weather.forecast[1].image);
 		
 		// Display Data : Day 3
-    $('#spokane figure:nth-child(3) .next-day').text(weather.forecast[2].day);
-    $('#spokane figure:nth-child(3) .low').text(weather.forecast[2].low);
-    $('#spokane figure:nth-child(3) .high').text(weather.forecast[2].high);
-    $('#spokane figure:nth-child(3) img').attr('src', weather.forecast[2].image);
+    $('#Spokane figure:nth-child(3) .next-day').text(weather.forecast[2].day);
+    $('#Spokane figure:nth-child(3) .low').text(weather.forecast[2].low);
+    $('#Spokane figure:nth-child(3) .high').text(weather.forecast[2].high);
+    $('#Spokane figure:nth-child(3) img').attr('src', weather.forecast[2].image);
 		
 		// Display Data : Day 4
     $('#spokane figure:nth-child(4) .next-day').text(weather.forecast[3].day);
@@ -189,10 +189,10 @@ $.simpleWeather({
     $('#spokane figure:nth-child(4) img').attr('src', weather.forecast[3].image);
 
     // Display Data : Day 5
-    $('#spokane figure:nth-child(5) .next-day').text(weather.forecast[4].day);
-    $('#spokane figure:nth-child(5) .low').text(weather.forecast[4].low);
-    $('#spokane figure:nth-child(5) .high').text(weather.forecast[4].high);
-    $('#spokane figure:nth-child(5) img').attr('src', weather.forecast[4].image);
+    $('#Spokane figure:nth-child(5) .next-day').text(weather.forecast[4].day);
+    $('#Spokane figure:nth-child(5) .low').text(weather.forecast[4].low);
+    $('#Spokane figure:nth-child(5) .high').text(weather.forecast[4].high);
+    $('#Spokane figure:nth-child(5) img').attr('src', weather.forecast[4].image);
 
 		// Change Icon w/ Condition code
       var iconCode = 'icon-' + weather.code;
@@ -237,49 +237,49 @@ $.simpleWeather({
   
   });
 
-// Seattle
+// Boise
 $.simpleWeather({
-    location: 98105,
+    location: 83701,
     unit: 'f',
     success: function(weather) {
       // Entire weather object
       console.log(weather);
 
       // Display Data
-	  $('#seattle .currently').text(weather.currently);
-      $('#seattle .temp').text(weather.temp);
-      $('#seattle .city').text(weather.city);
-      $('#seattle img').attr('src', weather.image);
-	  $('#seattle .today').text(weather.forecast[0].day + ', ' + weather.forecast[0].date);
+	  $('#Boise .currently').text(weather.currently);
+      $('#Boise .temp').text(weather.temp);
+      $('#Boise .city').text(weather.city);
+      $('#Boise img').attr('src', weather.image);
+	  $('#Boise .today').text(weather.forecast[0].day + ', ' + weather.forecast[0].date);
 	
 		// Display Data : Day 1
-    $('#seattle figure:nth-child(1) .low').text(weather.forecast[0].low);
-    $('#seattle figure:nth-child(1) .high').text(weather.forecast[0].high);
-    $('#seattle figure:nth-child(1) img').attr('src', weather.forecast[0].image);
+    $('#Boise figure:nth-child(1) .low').text(weather.forecast[0].low);
+    $('#Boise figure:nth-child(1) .high').text(weather.forecast[0].high);
+    $('#Boise figure:nth-child(1) img').attr('src', weather.forecast[0].image);
 	
 		// Display Data : Day 2
-    $('#seattle figure:nth-child(2) .next-day').text(weather.forecast[1].day);
-    $('#seattle figure:nth-child(2) .low').text(weather.forecast[1].low);
-    $('#seattle figure:nth-child(2) .high').text(weather.forecast[1].high);
-    $('#seattle figure:nth-child(2) img').attr('src', weather.forecast[1].image);
+    $('#Boise figure:nth-child(2) .next-day').text(weather.forecast[1].day);
+    $('#Boise figure:nth-child(2) .low').text(weather.forecast[1].low);
+    $('#Boise figure:nth-child(2) .high').text(weather.forecast[1].high);
+    $('#Boise figure:nth-child(2) img').attr('src', weather.forecast[1].image);
 		
 		// Display Data : Day 3
-    $('#seattle figure:nth-child(3) .next-day').text(weather.forecast[2].day);
-    $('#seattle figure:nth-child(3) .low').text(weather.forecast[2].low);
-    $('#seattle figure:nth-child(3) .high').text(weather.forecast[2].high);
-    $('#seattle figure:nth-child(3) img').attr('src', weather.forecast[2].image);
+    $('#Boise figure:nth-child(3) .next-day').text(weather.forecast[2].day);
+    $('#Boise figure:nth-child(3) .low').text(weather.forecast[2].low);
+    $('#Boise figure:nth-child(3) .high').text(weather.forecast[2].high);
+    $('#Boise figure:nth-child(3) img').attr('src', weather.forecast[2].image);
 		
 		// Display Data : Day 4
-    $('#seattle figure:nth-child(4) .next-day').text(weather.forecast[3].day);
-    $('#seattle figure:nth-child(4) .low').text(weather.forecast[3].low);
-    $('#seattle figure:nth-child(4) .high').text(weather.forecast[3].high);
-    $('#seattle figure:nth-child(4) img').attr('src', weather.forecast[3].image);
+    $('#Boise figure:nth-child(4) .next-day').text(weather.forecast[3].day);
+    $('#Boise figure:nth-child(4) .low').text(weather.forecast[3].low);
+    $('#Boise figure:nth-child(4) .high').text(weather.forecast[3].high);
+    $('#Boise figure:nth-child(4) img').attr('src', weather.forecast[3].image);
 
     // Display Data : Day 5
-    $('#seattle figure:nth-child(5) .next-day').text(weather.forecast[4].day);
-    $('#seattle figure:nth-child(5) .low').text(weather.forecast[4].low);
-    $('#seattle figure:nth-child(5) .high').text(weather.forecast[4].high);
-    $('#seattle figure:nth-child(5) img').attr('src', weather.forecast[4].image);
+    $('#Boise figure:nth-child(5) .next-day').text(weather.forecast[4].day);
+    $('#Boise figure:nth-child(5) .low').text(weather.forecast[4].low);
+    $('#Boise figure:nth-child(5) .high').text(weather.forecast[4].high);
+    $('#Boise figure:nth-child(5) img').attr('src', weather.forecast[4].image);
 
 		// Change Icon w/ Condition code
       var seattleIconCode = 'icon-' + weather.code;
@@ -322,49 +322,49 @@ $.simpleWeather({
   
   });
 
-// Portland
+// Camas
 $.simpleWeather({
-    location: 97214,
+    location: 98607,
     unit: 'f',
     success: function(weather) {
       // Entire weather object
       console.log(weather);
       
       // Display Data
-	  $('#portland .currently').text(weather.currently);
-      $('#portland .temp').text(weather.temp);
-      $('#portland .city').text(weather.city);
-      $('#portland img').attr('src', weather.image);
-	  $('#portland .today').text(weather.forecast[0].day + ', ' + weather.forecast[0].date);
+	  $('#Camas .currently').text(weather.currently);
+      $('#Camas .temp').text(weather.temp);
+      $('#Camas .city').text(weather.city);
+      $('#Camas img').attr('src', weather.image);
+	  $('#Camas .today').text(weather.forecast[0].day + ', ' + weather.forecast[0].date);
 	
 		// Display Data : Day 1
-    $('#portland figure:nth-child(1) .low').text(weather.forecast[0].low);
-    $('#portland figure:nth-child(1) .high').text(weather.forecast[0].high);
-    $('#portland figure:nth-child(1) img').attr('src', weather.forecast[0].image);
+    $('#Camas figure:nth-child(1) .low').text(weather.forecast[0].low);
+    $('#Camas figure:nth-child(1) .high').text(weather.forecast[0].high);
+    $('#Camas figure:nth-child(1) img').attr('src', weather.forecast[0].image);
 	
 		// Display Data : Day 2
-    $('#portland figure:nth-child(2) .next-day').text(weather.forecast[1].day);
-    $('#portland figure:nth-child(2) .low').text(weather.forecast[1].low);
-    $('#portland figure:nth-child(2) .high').text(weather.forecast[1].high);
-    $('#portland figure:nth-child(2) img').attr('src', weather.forecast[1].image);
+    $('#Camas figure:nth-child(2) .next-day').text(weather.forecast[1].day);
+    $('#Camas figure:nth-child(2) .low').text(weather.forecast[1].low);
+    $('#Camas figure:nth-child(2) .high').text(weather.forecast[1].high);
+    $('#Camas figure:nth-child(2) img').attr('src', weather.forecast[1].image);
 		
 		// Display Data : Day 3
-    $('#portland figure:nth-child(3) .next-day').text(weather.forecast[2].day);
-    $('#portland figure:nth-child(3) .low').text(weather.forecast[2].low);
-    $('#portland figure:nth-child(3) .high').text(weather.forecast[2].high);
-    $('#portland figure:nth-child(3) img').attr('src', weather.forecast[2].image);
+    $('#Camas figure:nth-child(3) .next-day').text(weather.forecast[2].day);
+    $('#Camas figure:nth-child(3) .low').text(weather.forecast[2].low);
+    $('#Camas figure:nth-child(3) .high').text(weather.forecast[2].high);
+    $('#Camas figure:nth-child(3) img').attr('src', weather.forecast[2].image);
 		
 		// Display Data : Day 4
-    $('#portland figure:nth-child(4) .next-day').text(weather.forecast[3].day);
-    $('#portland figure:nth-child(4) .low').text(weather.forecast[3].low);
-    $('#portland figure:nth-child(4) .high').text(weather.forecast[3].high);
-    $('#portland figure:nth-child(4) img').attr('src', weather.forecast[3].image);
+    $('#Camas figure:nth-child(4) .next-day').text(weather.forecast[3].day);
+    $('#Camas figure:nth-child(4) .low').text(weather.forecast[3].low);
+    $('#Camas figure:nth-child(4) .high').text(weather.forecast[3].high);
+    $('#Camas figure:nth-child(4) img').attr('src', weather.forecast[3].image);
 
     // Display Data : Day 5
-    $('#portland figure:nth-child(5) .next-day').text(weather.forecast[4].day);
-    $('#portland figure:nth-child(5) .low').text(weather.forecast[4].low);
-    $('#portland figure:nth-child(5) .high').text(weather.forecast[4].high);
-    $('#portland figure:nth-child(5) img').attr('src', weather.forecast[4].image);
+    $('#Camas figure:nth-child(5) .next-day').text(weather.forecast[4].day);
+    $('#Camas figure:nth-child(5) .low').text(weather.forecast[4].low);
+    $('#Camas figure:nth-child(5) .high').text(weather.forecast[4].high);
+    $('#Camas figure:nth-child(5) img').attr('src', weather.forecast[4].image);
 
 		// Change Icon w/ Condition code
       var portlandIconCode = 'icon-' + weather.code;
@@ -403,54 +403,54 @@ $.simpleWeather({
 	
     error: function(error) {
       // Show if weather cannot be retreived
-      console.log('Look outside.');
+      console.log('Sorry try again later.');
     }
   
   });
 
-// Ventura
+// Maui
 $.simpleWeather({
-    location: 93003,
+    location: 96708,
     unit: 'f',
     success: function(weather) {
       // Entire weather object
       console.log(weather);
       
       // Display Data
-	  $('#ventura .currently').text(weather.currently);
-      $('#ventura .temp').text(weather.temp);
-      $('#ventura .city').text(weather.city);
-      $('#ventura img').attr('src', weather.image);
-	  $('#ventura .today').text(weather.forecast[0].day + ', ' + weather.forecast[0].date);
+	  $('#Maui .currently').text(weather.currently);
+      $('#Maui .temp').text(weather.temp);
+      $('#Maui .city').text(weather.city);
+      $('#Maui img').attr('src', weather.image);
+	  $('#Maui .today').text(weather.forecast[0].day + ', ' + weather.forecast[0].date);
 	
 		// Display Data : Day 1
-    $('#ventura figure:nth-child(1) .low').text(weather.forecast[0].low);
-    $('#ventura figure:nth-child(1) .high').text(weather.forecast[0].high);
-    $('#ventura figure:nth-child(1) img').attr('src', weather.forecast[0].image);
+    $('#Maui figure:nth-child(1) .low').text(weather.forecast[0].low);
+    $('#Maui figure:nth-child(1) .high').text(weather.forecast[0].high);
+    $('#Maui figure:nth-child(1) img').attr('src', weather.forecast[0].image);
 	
 		// Display Data : Day 2
-    $('#ventura figure:nth-child(2) .next-day').text(weather.forecast[1].day);
-    $('#ventura figure:nth-child(2) .low').text(weather.forecast[1].low);
-    $('#ventura figure:nth-child(2) .high').text(weather.forecast[1].high);
-    $('#ventura figure:nth-child(2) img').attr('src', weather.forecast[1].image);
+    $('#Maui figure:nth-child(2) .next-day').text(weather.forecast[1].day);
+    $('#Maui figure:nth-child(2) .low').text(weather.forecast[1].low);
+    $('#Maui figure:nth-child(2) .high').text(weather.forecast[1].high);
+    $('#Maui figure:nth-child(2) img').attr('src', weather.forecast[1].image);
 		
 		// Display Data : Day 3
-    $('#ventura figure:nth-child(3) .next-day').text(weather.forecast[2].day);
-    $('#ventura figure:nth-child(3) .low').text(weather.forecast[2].low);
-    $('#ventura figure:nth-child(3) .high').text(weather.forecast[2].high);
-    $('#ventura figure:nth-child(3) img').attr('src', weather.forecast[2].image);
+    $('#Maui figure:nth-child(3) .next-day').text(weather.forecast[2].day);
+    $('#Maui figure:nth-child(3) .low').text(weather.forecast[2].low);
+    $('#Maui figure:nth-child(3) .high').text(weather.forecast[2].high);
+    $('#Maui figure:nth-child(3) img').attr('src', weather.forecast[2].image);
 		
 		// Display Data : Day 4
-    $('#ventura figure:nth-child(4) .next-day').text(weather.forecast[3].day);
-    $('#ventura figure:nth-child(4) .low').text(weather.forecast[3].low);
-    $('#ventura figure:nth-child(4) .high').text(weather.forecast[3].high);
-    $('#ventura figure:nth-child(4) img').attr('src', weather.forecast[3].image);
+    $('#Maui figure:nth-child(4) .next-day').text(weather.forecast[3].day);
+    $('#Maui figure:nth-child(4) .low').text(weather.forecast[3].low);
+    $('#Maui figure:nth-child(4) .high').text(weather.forecast[3].high);
+    $('#Maui figure:nth-child(4) img').attr('src', weather.forecast[3].image);
 
     // Display Data : Day 5
-    $('#ventura figure:nth-child(5) .next-day').text(weather.forecast[4].day);
-    $('#ventura figure:nth-child(5) .low').text(weather.forecast[4].low);
-    $('#ventura figure:nth-child(5) .high').text(weather.forecast[4].high);
-    $('#ventura figure:nth-child(5) img').attr('src', weather.forecast[4].image);
+    $('#Maui figure:nth-child(5) .next-day').text(weather.forecast[4].day);
+    $('#Maui figure:nth-child(5) .low').text(weather.forecast[4].low);
+    $('#Maui figure:nth-child(5) .high').text(weather.forecast[4].high);
+    $('#Maui figure:nth-child(5) img').attr('src', weather.forecast[4].image);
 
 		// Change Icon w/ Condition code
       var venturaIconCode = 'icon-' + weather.code;
@@ -496,64 +496,64 @@ $.simpleWeather({
   
   });
 	
-// Vegas
+// Mobile
 $.simpleWeather({
-    location: 89101,
+    location: 36695,
     unit: 'f',
     success: function(weather) {
       // Entire weather object
       console.log(weather);
       
       // Display Data
-	  $('#vegas .currently').text(weather.currently);
-      $('#vegas .temp').text(weather.temp);
-      $('#vegas .city').text(weather.city);
-      $('#vegas img').attr('src', weather.image);
-	  $('#vegas .today').text(weather.forecast[0].day + ', ' + weather.forecast[0].date);
+	  $('#Mobile .currently').text(weather.currently);
+      $('#Mobile .temp').text(weather.temp);
+      $('#Mobile .city').text(weather.city);
+      $('#Mobile img').attr('src', weather.image);
+	  $('#Mobile .today').text(weather.forecast[0].day + ', ' + weather.forecast[0].date);
 	
 		// Display Data : Day 1
-    $('#vegas figure:nth-child(1) .low').text(weather.forecast[0].low);
-    $('#vegas figure:nth-child(1) .high').text(weather.forecast[0].high);
-    $('#vegas figure:nth-child(1) img').attr('src', weather.forecast[0].image);
+    $('#Mobile figure:nth-child(1) .low').text(weather.forecast[0].low);
+    $('#Mobile figure:nth-child(1) .high').text(weather.forecast[0].high);
+    $('#Mobile figure:nth-child(1) img').attr('src', weather.forecast[0].image);
 	
 		// Display Data : Day 2
-    $('#vegas figure:nth-child(2) .next-day').text(weather.forecast[1].day);
-    $('#vegas figure:nth-child(2) .low').text(weather.forecast[1].low);
-    $('#vegas figure:nth-child(2) .high').text(weather.forecast[1].high);
-    $('#vegas figure:nth-child(2) img').attr('src', weather.forecast[1].image);
+    $('#Mobile figure:nth-child(2) .next-day').text(weather.forecast[1].day);
+    $('#Mobile figure:nth-child(2) .low').text(weather.forecast[1].low);
+    $('#Mobile figure:nth-child(2) .high').text(weather.forecast[1].high);
+    $('#Mobile figure:nth-child(2) img').attr('src', weather.forecast[1].image);
 		
 		// Display Data : Day 3
-    $('#vegas figure:nth-child(3) .next-day').text(weather.forecast[2].day);
-    $('#vegas figure:nth-child(3) .low').text(weather.forecast[2].low);
-    $('#vegas figure:nth-child(3) .high').text(weather.forecast[2].high);
-    $('#vegas figure:nth-child(3) img').attr('src', weather.forecast[2].image);
+    $('#Mobile figure:nth-child(3) .next-day').text(weather.forecast[2].day);
+    $('#Mobile figure:nth-child(3) .low').text(weather.forecast[2].low);
+    $('#Mobile figure:nth-child(3) .high').text(weather.forecast[2].high);
+    $('#Mobile figure:nth-child(3) img').attr('src', weather.forecast[2].image);
 		
 		// Display Data : Day 4
-    $('#vegas figure:nth-child(4) .next-day').text(weather.forecast[3].day);
-    $('#vegas figure:nth-child(4) .low').text(weather.forecast[3].low);
-    $('#vegas figure:nth-child(4) .high').text(weather.forecast[3].high);
-    $('#vegas figure:nth-child(4) img').attr('src', weather.forecast[3].image);
+    $('#Mobile figure:nth-child(4) .next-day').text(weather.forecast[3].day);
+    $('#Mobile figure:nth-child(4) .low').text(weather.forecast[3].low);
+    $('#Mobile figure:nth-child(4) .high').text(weather.forecast[3].high);
+    $('#Mobile figure:nth-child(4) img').attr('src', weather.forecast[3].image);
 
     // Display Data : Day 5
-    $('#vegas figure:nth-child(5) .next-day').text(weather.forecast[4].day);
-    $('#vegas figure:nth-child(5) .low').text(weather.forecast[4].low);
-    $('#vegas figure:nth-child(5) .high').text(weather.forecast[4].high);
-    $('#vegas figure:nth-child(5) img').attr('src', weather.forecast[4].image);
+    $('#Mobile figure:nth-child(5) .next-day').text(weather.forecast[4].day);
+    $('#Mobile figure:nth-child(5) .low').text(weather.forecast[4].low);
+    $('#Mobile figure:nth-child(5) .high').text(weather.forecast[4].high);
+    $('#Mobile figure:nth-child(5) img').attr('src', weather.forecast[4].image);
 
 		// Change Icon w/ Condition code
-      var vegasIconCode = 'icon-' + weather.code;
-	  var vegasIconCodeDay1 = 'icon-' + weather.forecast[0].code;
-	  var vegasIconCodeDay2 = 'icon-' + weather.forecast[1].code;
-	  var vegasIconCodeDay3 = 'icon-' + weather.forecast[2].code;
-	  var vegasIconCodeDay4 = 'icon-' + weather.forecast[3].code;
-	  var vegasIconCodeDay5 = 'icon-' + weather.forecast[4].code;
+      var MobileIconCode = 'icon-' + weather.code;
+	  var MobileIconCodeDay1 = 'icon-' + weather.forecast[0].code;
+	  var MobileIconCodeDay2 = 'icon-' + weather.forecast[1].code;
+	  var MobileIconCodeDay3 = 'icon-' + weather.forecast[2].code;
+	  var MobileIconCodeDay4 = 'icon-' + weather.forecast[3].code;
+	  var MobileIconCodeDay5 = 'icon-' + weather.forecast[4].code;
       
-		$('#vegas i:nth-child(1)').attr('class', vegasIconCode );
-		$('#vegas .day1 i').attr('class', vegasIconCodeDay1 );
-		$('#vegas .day2 i').attr('class', vegasIconCodeDay2 );
-		$('#vegas .day3 i').attr('class', vegasIconCodeDay3 );
-		$('#vegas .day4 i').attr('class', vegasIconCodeDay4 );
-		$('#vegas .day5 i').attr('class', vegasIconCodeDay5 );
+		$('#Mobile i:nth-child(1)').attr('class', vegasIconCode );
+		$('#Mobile .day1 i').attr('class', vegasIconCodeDay1 );
+		$('#Mobile .day2 i').attr('class', vegasIconCodeDay2 );
+		$('#Mobile .day3 i').attr('class', vegasIconCodeDay3 );
+		$('#Mobile .day4 i').attr('class', vegasIconCodeDay4 );
+		$('#Mobile .day5 i').attr('class', vegasIconCodeDay5 );
  
 		//get condition code
       
@@ -574,94 +574,6 @@ $.simpleWeather({
           }
 		if (weather.code >= 37 && weather.code <= 47) {
 		  $('#vegas').addClass('bad');
-          }
-	},
-	
-    error: function(error) {
-      // Show if weather cannot be retreived
-      console.log('Look outside.');
-    }
-  
-  });
-
-// phoenix
-$.simpleWeather({
-    location: 85001,
-    unit: 'f',
-    success: function(weather) {
-      // Entire weather object
-      console.log(weather);
-      
-      // Display Data
-	  $('#phoenix .currently').text(weather.currently);
-      $('#phoenix .temp').text(weather.temp);
-      $('#phoenix .city').text(weather.city);
-      $('#phoenix img').attr('src', weather.image);
-	  $('#phoenix .today').text(weather.forecast[0].day + ', ' + weather.forecast[0].date);
-	
-		// Display Data : Day 1
-    $('#phoenix figure:nth-child(1) .low').text(weather.forecast[0].low);
-    $('#phoenix figure:nth-child(1) .high').text(weather.forecast[0].high);
-    $('#phoenix figure:nth-child(1) img').attr('src', weather.forecast[0].image);
-	
-		// Display Data : Day 2
-    $('#phoenix figure:nth-child(2) .next-day').text(weather.forecast[1].day);
-    $('#phoenix figure:nth-child(2) .low').text(weather.forecast[1].low);
-    $('#phoenix figure:nth-child(2) .high').text(weather.forecast[1].high);
-    $('#phoenix figure:nth-child(2) img').attr('src', weather.forecast[1].image);
-		
-		// Display Data : Day 3
-    $('#phoenix figure:nth-child(3) .next-day').text(weather.forecast[2].day);
-    $('#phoenix figure:nth-child(3) .low').text(weather.forecast[2].low);
-    $('#phoenix figure:nth-child(3) .high').text(weather.forecast[2].high);
-    $('#phoenix figure:nth-child(3) img').attr('src', weather.forecast[2].image);
-		
-		// Display Data : Day 4
-    $('#phoenix figure:nth-child(4) .next-day').text(weather.forecast[3].day);
-    $('#phoenix figure:nth-child(4) .low').text(weather.forecast[3].low);
-    $('#phoenix figure:nth-child(4) .high').text(weather.forecast[3].high);
-    $('#phoenix figure:nth-child(4) img').attr('src', weather.forecast[3].image);
-
-    // Display Data : Day 5
-    $('#phoenix figure:nth-child(5) .next-day').text(weather.forecast[4].day);
-    $('#phoenix figure:nth-child(5) .low').text(weather.forecast[4].low);
-    $('#phoenix figure:nth-child(5) .high').text(weather.forecast[4].high);
-    $('#phoenix figure:nth-child(5) img').attr('src', weather.forecast[4].image);
-
-		// Change Icon w/ Condition code
-      var phoenixIconCode = 'icon-' + weather.code;
-	  var phoenixIconCodeDay1 = 'icon-' + weather.forecast[0].code;
-	  var phoenixIconCodeDay2 = 'icon-' + weather.forecast[1].code;
-	  var phoenixIconCodeDay3 = 'icon-' + weather.forecast[2].code;
-	  var phoenixIconCodeDay4 = 'icon-' + weather.forecast[3].code;
-	  var phoenixIconCodeDay5 = 'icon-' + weather.forecast[4].code;
-      
-		$('#phoenix i:nth-child(1)').attr('class', phoenixIconCode );
-		$('#phoenix .day1 i').attr('class', phoenixIconCodeDay1 );
-		$('#phoenix .day2 i').attr('class', phoenixIconCodeDay2 );
-		$('#phoenix .day3 i').attr('class', phoenixIconCodeDay3 );
-		$('#phoenix .day4 i').attr('class', phoenixIconCodeDay4 );
-		$('#phoenix .day5 i').attr('class', phoenixIconCodeDay5 );
- 
-		//get condition code
-      
-		if (weather.code >= 0 && weather.code <= 8) {
-          $('#phoenix').addClass('bad');
-          }
-		if (weather.code >= 9 && weather.code <= 12) {
-          $('#phoenix').addClass('wet');
-          }
-		if (weather.code >= 13 && weather.code <= 19) {
-          $('#phoenix').addClass('snow');
-          }
-      if (weather.code >= 20 && weather.code <= 30) {
-          $('#phoenix').addClass('sad');
-          }
-      if (weather.code >= 31 && weather.code <= 36) {
-		  $('#phoenix').addClass('happy');
-          }
-		if (weather.code >= 37 && weather.code <= 47) {
-		  $('#phoenix').addClass('bad');
           }
 	},
 	
