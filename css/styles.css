@@ -1,0 +1,289 @@
+/********************
+YOUR STYLES
+*******************/
+/*
+.temp {
+  color: red;
+}
+
+.city {
+   color: blue;
+ 
+}
+
+.state {
+  color: yellow;
+  }
+
+.forecast figure:nth-child(1) {
+  background: red;
+}
+
+.forecast figure:nth-child(2) {
+  background: green;
+}
+*/
+
+/*
+http://codepen.io/manikoth/pen/rxXrvb.css
+HOMESCREEN
+*/
+body {
+	font-family: 'Bitter', serif;
+	line-height: 1;
+	color: white;
+	margin: 0;
+	padding: 0;
+	background: #2a2a2a;
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+/*HAMBURGER*/
+#sidr-show-hide {
+  position: absolute;
+  z-index: 1000;
+  left: 1em;
+  top: 1em;
+  color: white;
+  font-size: 2em;
+/*
+	padding: 0 5px;
+	border: solid white;
+	border-radius: 100px;
+*/
+}
+#close { 
+	float: right;
+	font-size: 2em;
+	margin: 1em;
+	padding: 0px 6px;
+	border: solid white;
+	border-radius: 100px;
+/*	text-shadow: 0 0 5px white;*/
+}
+.close { 
+	float: right;
+	font-size: 2em;
+	margin: 1em;
+	padding: 0px 6px;
+	border: solid white;
+	border-radius: 100px;
+/*	text-shadow: 0 0 5px white;*/
+}
+/*SIDR*/
+a {
+	text-decoration: none;
+	color: white;
+}
+li a {
+	width: 100%;
+	padding: .5em .5em .5em 0;
+/*	margin-right: 100%;*/
+}
+
+li a:active  {
+	background: white;
+	color: black;
+}
+
+.places {
+  list-style-type: none;
+	margin: 0 0 0 2em;
+	padding: 0;
+	
+}
+li {
+	width: 100%;
+	padding: .5em 0;
+	border-top: solid 4px white;
+}
+li:nth-child(1) {
+	border-top: none;
+	margin: 2em 2em 2em 0;
+}
+#logo {
+	width: 12em;
+	padding: 0;
+	margin-top: 2em;
+}
+li:nth-child(2) {
+	margin-bottom: 4em;
+}
+
+/*Section Containers*/
+section {
+  min-height: 100%;
+  position: absolute;
+  width: 100%;
+  background: black;
+}
+
+:target {
+  z-index: 1;
+}
+.target {
+	z-index: 2;
+}
+/*Minimal initial style of sidebar*/
+.sidr {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: 16em;
+    overflow-x: hidden;
+    overflow-y: auto;
+	background: #2c2c2c;
+	box-shadow: inset -20px -30px 100px -20px black;
+    }
+
+.left {
+        left: -16em;
+        right: auto;
+}
+
+/*initial section styling*/
+.info {
+	margin: 11em 0 0 0;
+} 
+h3, h1 {
+	text-align: right;
+	border-top: solid 4px white;
+	padding:16px 0;
+	margin: 0 32px 0 0;
+}
+.temp {
+	font-size: 4em;
+	line-height: 1;
+}
+#city {
+	padding-bottom: 0;
+}
+.today {
+	border: none;
+	padding-top: 0;
+}
+
+section i:first-child {
+  font-family: weather;
+  font-size:10em;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  text-transform: none;
+	color: white;
+	text-shadow: 0 0 20px white;
+/*	border-bottom: solid 4px;*/
+/*	padding-bottom: 0;*/
+	padding-left:100%; 
+	position: absolute;
+	right:32px;
+	margin: 0;
+}
+/*-----forecast------*/
+i {
+  font-family: weather;
+  font-size:3em;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  text-transform: none;
+	color: white;
+/*	border-bottom: solid 4px;*/
+	margin-top: 4px;
+}
+
+figure {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	margin: 0;	
+	border-bottom: dotted 4px white;
+}
+figure:last-child {
+	border-bottom: none;
+}
+.forecast {
+	margin: 0 32px 0 0;
+	padding: 1em 0 4em 32px;
+	border-top: solid 4px white;
+}
+
+/*-----button--------*/
+.geo {
+  position: fixed;
+  bottom: 0;
+	z-index: 2;
+  background: #2a2a2a;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+	font-family: 'Bitter', serif;
+color: white;
+	border: none;
+	border-top: solid 4px white;
+	box-shadow: inset 0px -10px 30px -10px black;
+}
+.geo:active {
+	background: white;
+	color: black;
+}
+/********conditional BG**********/
+.sad {
+background: #4f637b;  
+background: -webkit-linear-gradient(to left, #95999b , #F4f637b); 
+background: linear-gradient(to left, #95999b , #4f637b); 
+}  
+.happy {
+background: ##a1d4f0; 
+background: -webkit-linear-gradient(to left, #ffb100 , ##a1d4f0);
+background: linear-gradient(to left, #ffb100 , #a1d4f0); 
+}
+
+.wet {
+background: #898b8d; 
+background: -webkit-linear-gradient(to left, #138bbf , #898b8d); 
+background: linear-gradient(to left, #138bbf , #898b8d); 
+}
+
+.bad {
+background: #2a2a2a; 
+background: -webkit-linear-gradient(to left, #2a2a2a , #cccccc); 
+background: linear-gradient(to left, #2a2a2a , #cccccc); 
+}
+
+
+
+
+
+
+
+
+/********************
+MEDIA QUERIES
+*******************/
+/* Mobile: 320px = 20em */
+@media screen and (min-width: 20em) { 
+
+ 
+  
+}
+
+/* Tablet:  768px = 160em */
+@media screen and (min-width: 48em)  {
+
+ 
+
+}
+
+/* Desktop: 1280px = 80em */
+@media screen and (min-width: 80em) { 
+  
+
+
+}
