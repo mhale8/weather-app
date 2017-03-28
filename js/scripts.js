@@ -107,19 +107,9 @@ var getWeather = function(location) {
     $('#currentLocation figure:nth-child(5) img').attr('src', weather.forecast[4].image);
 
 		// Change Icon w/ Condition code
-      var currentLocationIconCode = 'wi wi-' + weather.currently;
-	  var currentLocationIconCodeDay1 = 'wi wi-' + weather.forecast[0].currently;
-	  var currentLocationIconCodeDay2 = 'wi wi-' + weather.forecast[1].currently;
-	  var currentLocationIconCodeDay3 = 'wi wi-' + weather.forecast[2].currently;
-	  var currentLocationIconCodeDay4 = 'wi wi-' + weather.forecast[3].currently;
-	  var currentLocationIconCodeDay5 = 'wi wi-' + weather.forecast[4].currently;
-      
-		$('#currentLocation i:nth-child(1)').attr('class', currentLocationIconCode );
-		$('#currentLocation .day1 i').attr('class', currentLocationIconCodeDay1 );
-		$('#currentLocation .day2 i').attr('class', currentLocationIconCodeDay2 );
-		$('#currentLocation .day3 i').attr('class', currentLocationIconCodeDay3 );
-		$('#currentLocation .day4 i').attr('class', currentLocationIconCodeDay4 );
-		$('#currentLocation .day5 i').attr('class', currentLocationIconCodeDay5 );
+      var currentLocationIconCode = 'icon-' + weather.code;
+	  $('#currentLocation i:nth-child(1)').attr('class', currentLocationIconCode );
+		
     },
     error: function(error) {
       // Show if weather cannot be retreived
@@ -176,20 +166,8 @@ $.simpleWeather({
 
 		// Change Icon w/ Condition code
         // wi-rain-wind
-      var iconCode = 'wi wi-' + weather.text;
-	  var iconCodeDay1 = 'wi wi-' + weather.forecast[0].text;
-	  var iconCodeDay2 = 'wi wi-' + weather.forecast[1].text;
-	  var iconCodeDay3 = 'wi wi-' + weather.forecast[2].text;
-	  var iconCodeDay4 = 'wi wi-' + weather.forecast[3].text;
-	  var iconCodeDay5 = 'wi wi-' + weather.forecast[4].text;
-      
-		$('#spokane i:nth-child(1)').attr('class', iconCode );
-		$('#spokane .day1 i').attr('class', iconCodeDay1 );
-		$('#spokane .day2 i').attr('class', iconCodeDay2 );
-		$('#spokane .day3 i').attr('class', iconCodeDay3 );
-		$('#spokane .day4 i').attr('class', iconCodeDay4 );
-		$('#spokane .day5 i').attr('class', iconCodeDay5 );
-
+      var iconCode = 'icon-' + weather.code;
+        $('#Spokane i:nth-child(1)').attr('class', iconCode );  
 	},
 	
     error: function(error) {
@@ -243,21 +221,9 @@ $.simpleWeather({
     $('#Boise figure:nth-child(5) .high').text(weather.forecast[4].high);
     $('#Boise figure:nth-child(5) img').attr('src', weather.forecast[4].image);
 
-		// Change Icon w/ Condition code
-      var BoiseIconCode = 'wi wi-' + weather.text;
-	  var BoiseIconCodeDay1 = 'wi wi-' + weather.forecast[0].text;
-	  var BoiseIconCodeDay2 = 'wi wi-' + weather.forecast[1].text;
-	  var BoiseIconCodeDay3 = 'wi wi-' + weather.forecast[2].text;
-	  var BoiseIconCodeDay4 = 'wi wi-' + weather.forecast[3].text;
-	  var BoiseIconCodeDay5 = 'wi wi-' + weather.forecast[4].text;
-      
-		$('#Boise i:nth-child(1)').attr('class', BoiseIconCode );
-		$('#Boise .day1 i').attr('class', BoiseIconCodeDay1 );
-		$('#Boise .day2 i').attr('class', BoiseIconCodeDay2 );
-		$('#Boise .day3 i').attr('class', BoiseIconCodeDay3 );
-		$('#Boise .day4 i').attr('class', BoiseIconCodeDay4 );
-		$('#Boise .day5 i').attr('class', BoiseIconCodeDay5 );
-		
+        // Change Icon w/ Condition code
+      var BoiseIconCode = 'icon-' + weather.code;
+	  $('#Boise i:nth-child(1)').attr('class', BoiseIconCode );
 	},
     error: function(error) {
       // Show if weather cannot be retreived
@@ -311,23 +277,8 @@ $.simpleWeather({
     $('#Camas figure:nth-child(5) img').attr('src', weather.forecast[4].image);
 
 		// Change Icon w/ Condition code
-      var iconCode = 'wi wi-' + weather.text;
-	  var iconCodeDay1 = 'wi wi-' + weather.forecast[0].text;
-	  var iconCodeDay2 = 'wi wi-' + weather.forecast[1].text;
-	  var iconCodeDay3 = 'wi wi-' + weather.forecast[2].text;
-	  var iconCodeDay4 = 'wi wi-' + weather.forecast[3].text;
-	  var iconCodeDay5 = 'wi wi-' + weather.forecast[4].text;
-      
-		$('#Camas i:nth-child(1)').attr('class', iconCode );
-		$('#Camas .day1 i').attr('class', iconCodeDay1 );
-		$('#Camas .day2 i').attr('class', iconCodeDay2 );
-		$('#Camas .day3 i').attr('class', iconCodeDay3 );
-		$('#Camas .day4 i').attr('class', iconCodeDay4 );
-		$('#Camas .day5 i').attr('class', iconCodeDay5 );
-        
-        
-		
-		
+      var iconCode = 'icon-' + weather.code;
+      $('#Camas i:nth-child(1)').attr('class', iconCode );	
 	},
 	
     error: function(error) {
@@ -382,21 +333,8 @@ $.simpleWeather({
     $('#Maui figure:nth-child(5) img').attr('src', weather.forecast[4].image);
 
 		// Change Icon w/ Condition code
-      var MauiIconCode = 'wi wi-' + weather.text;
-	  var MauiIconCodeDay1 = 'wi wi-' + weather.forecast[0].text;
-	  var MauiIconCodeDay2 = 'wi wi-' + weather.forecast[1].text;
-	  var MauiIconCodeDay3 = 'wi wi-' + weather.forecast[2].text;
-	  var MauiIconCodeDay4 = 'wi wi-' + weather.forecast[3].text;
-	  var MauiIconCodeDay5 = 'wi wi-' + weather.forecast[4].text;
-      
-		$('#Maui i:nth-child(1)').attr('class', MauiIconCode );
-		$('#Maui .day1 i').attr('class', MauiIconCodeDay1 );
-		$('#Maui .day2 i').attr('class', MauiIconCodeDay2 );
-		$('#Maui .day3 i').attr('class', MauiIconCodeDay3 );
-		$('#Maui .day4 i').attr('class', MauiIconCodeDay4 );
-		$('#Maui .day5 i').attr('class', MauiIconCodeDay5 );
-      
-		
+      var MauiIconCode = 'icon-' + weather.code;  
+      $('#Maui i:nth-child(1)').attr('class', MauiIconCode );
 	},
 	
     error: function(error) {
@@ -451,21 +389,8 @@ $.simpleWeather({
     $('#Mobile figure:nth-child(5) img').attr('src', weather.forecast[4].image);
 
 		// Change Icon w/ Condition code
-      var MobileIconCode = 'wi wi-' + weather.text;
-	  var MobileIconCodeDay1 = 'wi wi-' + weather.forecast[0].text;
-	  var MobileIconCodeDay2 = 'wi wi-' + weather.forecast[1].text;
-	  var MobileIconCodeDay3 = 'wi wi-' + weather.forecast[2].text;
-	  var MobileIconCodeDay4 = 'wi wi-' + weather.forecast[3].text;
-	  var MobileIconCodeDay5 = 'wi wi-' + weather.forecast[4].text;
-      
-		$('#Mobile i:nth-child(1)').attr('class', MobileIconCode );
-		$('#Mobile .day1 i').attr('class', MobileIconCodeDay1 );
-		$('#Mobile .day2 i').attr('class', MobileIconCodeDay2 );
-		$('#Mobile .day3 i').attr('class', MobileIconCodeDay3 );
-		$('#Mobile .day4 i').attr('class', MobileIconCodeDay4 );
-		$('#Mobile .day5 i').attr('class', MobileIconCodeDay5 );
- 
-		
+      var MobileIconCode = 'icon-' + weather.code;
+      $('#Mobile i:nth-child(1)').attr('class', MobileIconCode );
 	},
 	
     error: function(error) {
