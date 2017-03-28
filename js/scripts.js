@@ -176,12 +176,12 @@ $.simpleWeather({
 
 		// Change Icon w/ Condition code
         // wi-rain-wind
-      var iconCode = 'wi-' + weather.currently;
-	  var iconCodeDay1 = 'wi-' + weather.forecast[0].currently;
-	  var iconCodeDay2 = 'wi-' + weather.forecast[1].currently;
-	  var iconCodeDay3 = 'wi-' + weather.forecast[2].currently;
-	  var iconCodeDay4 = 'wi-' + weather.forecast[3].currently;
-	  var iconCodeDay5 = 'wi-' + weather.forecast[4].currently;
+      var iconCode = 'wi wi-' + weather.text;
+	  var iconCodeDay1 = 'wi wi-' + weather.forecast[0].text;
+	  var iconCodeDay2 = 'wi wi-' + weather.forecast[1].text;
+	  var iconCodeDay3 = 'wi wi-' + weather.forecast[2].text;
+	  var iconCodeDay4 = 'wi wi-' + weather.forecast[3].text;
+	  var iconCodeDay5 = 'wi wi-' + weather.forecast[4].text;
       
 		$('#spokane i:nth-child(1)').attr('class', iconCode );
 		$('#spokane .day1 i').attr('class', iconCodeDay1 );
@@ -244,12 +244,12 @@ $.simpleWeather({
     $('#Boise figure:nth-child(5) img').attr('src', weather.forecast[4].image);
 
 		// Change Icon w/ Condition code
-      var BoiseIconCode = 'wi-' + weather.currently;
-	  var BoiseIconCodeDay1 = 'wi-' + weather.forecast[0].currently;
-	  var BoiseIconCodeDay2 = 'wi-' + weather.forecast[1].currently;
-	  var BoiseIconCodeDay3 = 'wi-' + weather.forecast[2].currently;
-	  var BoiseIconCodeDay4 = 'wi-' + weather.forecast[3].currently;
-	  var BoiseIconCodeDay5 = 'wi-' + weather.forecast[4].currently;
+      var BoiseIconCode = 'wi wi-' + weather.text;
+	  var BoiseIconCodeDay1 = 'wi wi-' + weather.forecast[0].text;
+	  var BoiseIconCodeDay2 = 'wi wi-' + weather.forecast[1].text;
+	  var BoiseIconCodeDay3 = 'wi wi-' + weather.forecast[2].text;
+	  var BoiseIconCodeDay4 = 'wi wi-' + weather.forecast[3].text;
+	  var BoiseIconCodeDay5 = 'wi wi-' + weather.forecast[4].text;
       
 		$('#Boise i:nth-child(1)').attr('class', BoiseIconCode );
 		$('#Boise .day1 i').attr('class', BoiseIconCodeDay1 );
@@ -311,12 +311,12 @@ $.simpleWeather({
     $('#Camas figure:nth-child(5) img').attr('src', weather.forecast[4].image);
 
 		// Change Icon w/ Condition code
-      var iconCode = 'wi wi-' + weather.code;
-	  var iconCodeDay1 = 'wi wi-' + weather.forecast[0].code;
-	  var iconCodeDay2 = 'wi wi-' + weather.forecast[1].code;
-	  var iconCodeDay3 = 'wi wi-' + weather.forecast[2].code;
-	  var iconCodeDay4 = 'wi wi-' + weather.forecast[3].code;
-	  var iconCodeDay5 = 'wi wi-' + weather.forecast[4].code;
+      var iconCode = 'wi wi-' + weather.text;
+	  var iconCodeDay1 = 'wi wi-' + weather.forecast[0].text;
+	  var iconCodeDay2 = 'wi wi-' + weather.forecast[1].text;
+	  var iconCodeDay3 = 'wi wi-' + weather.forecast[2].text;
+	  var iconCodeDay4 = 'wi wi-' + weather.forecast[3].text;
+	  var iconCodeDay5 = 'wi wi-' + weather.forecast[4].text;
       
 		$('#Camas i:nth-child(1)').attr('class', iconCode );
 		$('#Camas .day1 i').attr('class', iconCodeDay1 );
@@ -382,12 +382,12 @@ $.simpleWeather({
     $('#Maui figure:nth-child(5) img').attr('src', weather.forecast[4].image);
 
 		// Change Icon w/ Condition code
-      var MauiIconCode = 'wi-' + weather.currently;
-	  var MauiIconCodeDay1 = 'wi-' + weather.forecast[0].currently;
-	  var MauiIconCodeDay2 = 'wi-' + weather.forecast[1].currently;
-	  var MauiIconCodeDay3 = 'wi-' + weather.forecast[2].currently;
-	  var MauiIconCodeDay4 = 'wi-' + weather.forecast[3].currently;
-	  var MauiIconCodeDay5 = 'wi-' + weather.forecast[4].currently;
+      var MauiIconCode = 'wi wi-' + weather.text;
+	  var MauiIconCodeDay1 = 'wi wi-' + weather.forecast[0].text;
+	  var MauiIconCodeDay2 = 'wi wi-' + weather.forecast[1].text;
+	  var MauiIconCodeDay3 = 'wi wi-' + weather.forecast[2].text;
+	  var MauiIconCodeDay4 = 'wi wi-' + weather.forecast[3].text;
+	  var MauiIconCodeDay5 = 'wi wi-' + weather.forecast[4].text;
       
 		$('#Maui i:nth-child(1)').attr('class', MauiIconCode );
 		$('#Maui .day1 i').attr('class', MauiIconCodeDay1 );
@@ -451,12 +451,12 @@ $.simpleWeather({
     $('#Mobile figure:nth-child(5) img').attr('src', weather.forecast[4].image);
 
 		// Change Icon w/ Condition code
-      var MobileIconCode = 'wi-' + weather.currently;
-	  var MobileIconCodeDay1 = 'wi-' + weather.forecast[0].currently;
-	  var MobileIconCodeDay2 = 'wi-' + weather.forecast[1].currently;
-	  var MobileIconCodeDay3 = 'wi-' + weather.forecast[2].currently;
-	  var MobileIconCodeDay4 = 'wi-' + weather.forecast[3].currently;
-	  var MobileIconCodeDay5 = 'wi-' + weather.forecast[4].currently;
+      var MobileIconCode = 'wi wi-' + weather.text;
+	  var MobileIconCodeDay1 = 'wi wi-' + weather.forecast[0].text;
+	  var MobileIconCodeDay2 = 'wi wi-' + weather.forecast[1].text;
+	  var MobileIconCodeDay3 = 'wi wi-' + weather.forecast[2].text;
+	  var MobileIconCodeDay4 = 'wi wi-' + weather.forecast[3].text;
+	  var MobileIconCodeDay5 = 'wi wi-' + weather.forecast[4].text;
       
 		$('#Mobile i:nth-child(1)').attr('class', MobileIconCode );
 		$('#Mobile .day1 i').attr('class', MobileIconCodeDay1 );
