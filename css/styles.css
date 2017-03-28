@@ -3,7 +3,7 @@ The fun part!
 *******************/
 
 body {
-	font-family: 'Bitter', serif;
+	font-family: 'Oswald', sans-serif;
 	line-height: 1;
 	color: white;
 	margin: 0;
@@ -16,7 +16,14 @@ body {
 	margin: 0;
 	padding: 0;
 }
-/*HAMBURGER*/
+
+
+
+
+
+
+
+/* Sidr Menu Bar*/
 #sidr-show-hide {
   position: absolute;
   z-index: 1000;
@@ -41,7 +48,7 @@ body {
     margin: 1em;
     padding: 0px 6px;
 }
-/*SIDR*/
+/* Sidr Bar Menu Styling */
 a {
 	text-decoration: none;
 	color: white;
@@ -72,14 +79,10 @@ li:nth-child(1) {
 	border-top: none;
 	margin: 2em 2em 2em 0;
 }
-#logo {
-	width: 12em;
-	padding: 0;
-	margin-top: 2em;
-}
 
 
-/*Section Containers*/
+
+/* Section Styling */
 section {
   min-height: 100%;
   position: absolute;
@@ -93,8 +96,9 @@ section {
 .target {
 	z-index: 2;
 }
-/*Minimal initial style of sidebar*/
+
 .sidr {
+    font-size: 1.3em;
     display: block;
     position: fixed;
     top: 0;
@@ -116,51 +120,121 @@ section {
 	margin: 11em 0 0 0;
 } 
 h3, h1 {
-	text-align: right;
-	border-top: solid 4px white;
+	text-align: center;
 	padding:16px 0;
 	margin: 0 32px 0 0;
 }
 .temp {
+    margin-left:30px;
 	font-size: 4em;
 	line-height: 1;
 }
 #city {
 	padding-bottom: 0;
-}
-.today {
-	border: none;
-	padding-top: 0;
+    position: relative;
+    left: 5px;
 }
 
+
 section i:first-child {
-  font-family: weather;
+  font-family: 'Oswald', sans-serif;
   font-size:10em;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
   text-transform: none;
-	color: white;
-	text-shadow: 0 0 20px white;
-/*	border-bottom: solid 4px;*/
-/*	padding-bottom: 0;*/
-	padding-left:100%; 
-	position: absolute;
-	right:32px;
-	margin: 0;
+  color: white;
+  text-shadow: 0 0 20px white;
+  padding-left:100%; 
+  position: absolute;
+  right:32px;
+  margin: 0;
 }
-/*-----forecast------*/
+
+#Camas  {
+    background: 
+    /* top, transparent blue */ 
+    linear-gradient(
+      rgba(35, 106, 177, 0.5), 
+      rgba(35, 106, 177, 0.5)
+    ),
+    /* bottom, image */
+    url(https://s-media-cache-ak0.pinimg.com/originals/6f/97/2b/6f972bece72a0f70332e7f6b4c0a5d5d.jpg);
+  background-position:center center;
+  background-attachment:fixed;
+  background-size:cover; 
+}
+
+#Spokane  {
+    background: 
+    /* top, transparent blue */ 
+    linear-gradient(
+      rgba(35, 106, 177, 0.5), 
+      rgba(35, 106, 177, 0.5)
+    ),
+    /* bottom, image */
+    url(http://seniorspokane.com/wp-content/uploads/2014/09/riverfrontpark.jpg);
+  background-position:center center;
+  background-attachment:fixed;
+  background-size:cover; 
+}
+
+#Boise  {
+    background: 
+    /* top, transparent blue */ 
+    linear-gradient(
+      rgba(35, 106, 177, 0.5), 
+      rgba(35, 106, 177, 0.5)
+    ),
+    /* bottom, image */
+    url(https://farm8.staticflickr.com/7069/6907606147_ba680e2d6c_o.jpg);
+  background-position:center center;
+  background-attachment:fixed;
+  background-size:cover; 
+}
+
+#Maui  {
+    background: 
+    /* top, transparent blue */ 
+    linear-gradient(
+      rgba(35, 106, 177, 0.5), 
+      rgba(35, 106, 177, 0.5)
+    ),
+    /* bottom, image */
+    url(http://dawnviral.com/wp-content/uploads/2015/09/Maui-Island-Hawaii.jpg);
+  background-position:center center;
+  background-attachment:fixed;
+  background-size:cover; 
+}
+
+
+#Mobile  {
+    background: 
+    /* top, transparent blue */ 
+    linear-gradient(
+      rgba(35, 106, 177, 0.5), 
+      rgba(35, 106, 177, 0.5)
+    ),
+    /* bottom, image */
+    url(http://www.atlantamagazine.com/wp-content/uploads/sites/12/2015/09/web-downtownmobile-cover-horiz.jpg);
+  background-position:center center;
+  background-attachment:fixed;
+  background-size:cover; 
+}
+
+/*- Forecast -*/
 i {
-  font-family: weather;
+  font-family: 'Oswald', sans-serif;
   font-size:3em;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
   text-transform: none;
-	color: white;
-/*	border-bottom: solid 4px;*/
-	margin-top: 4px;
+  color: white;
+  margin-top: 4px;
+    
 }
+
 
 figure {
 	display: flex;
@@ -175,55 +249,46 @@ figure {
     float: right;
 }
 
+.today{
+    position: relative;
+    left: 5px;
+}
+
 .high, .low {
     margin-left: 100px;
-    display: flex;
     flex-direction: row;
 }
 
 
 
 .forecast {
+    font-size: 1.5em;
 	margin: 0 32px 0 0;
 	padding: 1em 0 4em 32px;
-	border-top: solid 4px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*-----button--------*/
 .geo {
   position: fixed;
   bottom: 0;
-	z-index: 2;
-  background: #2a2a2a;
+  z-index: 2;
+  background: #194d82;
   width: 100%;
   padding: 1em;
   text-align: center;
-	font-family: 'Bitter', serif;
-color: white;
-	border: none;
-	border-top: solid 4px white;
-	box-shadow: inset 0px -10px 30px -10px black;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  border: none;
+  box-shadow: inset 0px -10px 30px -10px black;
 }
 .geo:active {
-	background: white;
-	color: black;
-}
-/********conditional BG**********/
-.sad {
-background: url("https://static.pexels.com/photos/50695/rain-after-the-rain-a-drop-of-drop-of-rain-50695.jpeg") no-repeat center center fixed;   
-}  
-.happy {
-background: url("https://static.pexels.com/photos/50695/rain-after-the-rain-a-drop-of-drop-of-rain-50695.jpeg") no-repeat center center fixed;  
+	background: #0b2035;
+	color: #FFFFFF;
 }
 
-.wet {
-background: url("https://static.pexels.com/photos/50695/rain-after-the-rain-a-drop-of-drop-of-rain-50695.jpeg") no-repeat center center fixed;  
- 
-}
-
-.bad {
-background: url("https://static.pexels.com/photos/50695/rain-after-the-rain-a-drop-of-drop-of-rain-50695.jpeg") no-repeat center center fixed;  
-}
 
 
 
