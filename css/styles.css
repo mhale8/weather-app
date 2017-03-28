@@ -132,6 +132,9 @@ h3, h1 {
 
 
 section i:first-child {
+  align-content: center;
+  position: relative;
+  top: 190px;
   font-family: 'weather';
   font-size:10em;
   font-weight: normal;
@@ -140,8 +143,7 @@ section i:first-child {
   text-transform: none;
   color: white;
   text-shadow: 0 0 20px white;
-  padding-left:100%; 
-  position: absolute;
+  padding-left: 47.5%;
   right:32px;
   margin: 0;
 }
